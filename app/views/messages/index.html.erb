@@ -15,18 +15,20 @@
 <%= form_for(@message) do |f| %>
   <form class="form-horizontal">
      <div class="form-group">
-  名前:
-  <%= f.text_field :name %>
+ <%= f.label :name, "名前" %>
+<%= f.text_field :name %>
     </div>
   　<div class="form-group">
-  内容:
-  <%= f.text_area :body, rows: 3 %>
+<%= f.label :name, "内容" %>
+  <%= f.text_area :body, class:"col-xs-10 form-control", size: 4 %>
     </div>
   <div class="form-group">
   <%= f.submit class: "btn btn-sm btn-primary" %>
 <% end %>
   </div>
   <div class="form-group">
+    
+
 
 
 
